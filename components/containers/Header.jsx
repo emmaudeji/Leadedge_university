@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
 import Searchbox from '../searchbox'
+import UseOnClickOutside from '../../hooks/useOnClickOutside'
 
 const header = () => {
   const [showSearchBox, setShowSearchBox] = useState(false)
@@ -27,7 +28,11 @@ const header = () => {
     </div>
 
     <div className='w-full'>
-      {showSearchBox && <Searchbox/>}
+      <UseOnClickOutside
+        show={showSearchBox}
+        onClickOutside={() => setShowSearchBox(false)}
+        component={<Searchbox/>}
+      />
     </div>
     </>
     
