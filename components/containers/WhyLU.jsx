@@ -6,7 +6,7 @@ const WhyLU = () => {
       <div className='heading2 md:border-r border-zinc-400 pr-10 pb-2'>
         {/* heading */}
         
-        <h1 className='text-blue-900 '>Leadedge is for The Dreamer, The Achiever, The Leader</h1>
+        <h1 className='text-blue-900 '>Leadedge University is for the creator, the dreamer, the leader</h1>
 
       </div>
       <div>

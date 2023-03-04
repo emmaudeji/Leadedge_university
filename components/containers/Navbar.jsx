@@ -13,13 +13,13 @@ const navBar = () => {
 
   return (
     <>
-    <div className='w-full flex px-6 sm:px-16 lg:px-36 bg-blue-800 py-6 justify-between text-white capitalize text-lg  z-50 .stick' >
+    <div className='w-full flex px-6 sm:px-16 lg:px-36 bg-blue-800 py-6 justify-between text-white capitalize text-lg items-center z-50'>
       
       <div className="logo">
         <Link href={'/'}>
-          <h3 className='font-bold sm:text-3xl text-xl'>LEADEDGE</h3>
+            <img src="/leadedge-white-logo.png" alt="leadedge-logo" 
+            className='w-56'/>
         </Link>
-        
       </div>
       
       { !click ? 
