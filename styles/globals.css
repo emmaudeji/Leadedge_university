@@ -73,7 +73,7 @@ a {
 }
 
 .mobile-nav{
-  @apply absolute top-14 right-0 bg-blue-800 w-[60vw] flex gap-8 md:hidden  px-10 pt-14 flex-col h-[100vh]
+  @apply absolute top-24 z-40 right-0 bg-blue-800 w-[60vw] flex gap-8 md:hidden  px-10 pt-14 flex-col h-[100vh]
 }
 /* 
 img {
