@@ -4,6 +4,10 @@ import { IoMdPaperPlane } from 'react-icons/io';
 const Newsletter = () => {
   const [input, setInput] = useState('')
 
+  const handleSubmit = () => {
+    ''
+  }
+
   return (
      <div className='w-full sm:flex justify-between items-center px-6  sm:px-16  lg:px-36 xl:px-48  mx-auto py-14 bg-blue-900' >
    
@@ -14,7 +18,7 @@ const Newsletter = () => {
 
         <form 
         className='overflow-hidden bg-white flex justify-between rounded md:w-[45%] h-14 mt-4 sm:mt-0 mr-6 sm:mr-0'
-        onSubmit={""}
+        onSubmit={handleSubmit}
         >
           <input 
           className='bg-zinc-300 px-4 w-full hover:bg-white focus:bg-zinc-100 duration-300'

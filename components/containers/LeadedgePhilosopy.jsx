@@ -13,8 +13,8 @@ const LeadedgePhilosopy = () => {
         <div className='absolute h-full md:w-24 left-[90%] top-10 bg-yellow-500'>
           {''}
         </div>
-       <div className='md:hidden absolute top-[90%] w-[80%] h-24 bg-yellow-500 flex items-center pl-6 text-2xl font-bold'>
-          Leadedge Philosphy
+       <div className='md:left-[-200%] absolute top-[90%] w-[80%] h-24 bg-yellow-500 flex items-center pl-6 text-2xl font-bold'>
+          Leadedge Philosophy
         </div>
       </div>
 
