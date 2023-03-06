@@ -7,6 +7,7 @@ import LeadedgePhilosopy from "../components/containers/LeadedgePhilosopy";
 import SearchCourses from "../components/containers/searchCourses";
 import Classroom from "@/components/containers/Classroom";
 import Services from "@/components/containers/Services";
+import NewsContainer from "@/components/news/NewsContainer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <LeadedgePhilosopy />
       <Classroom />
       <Services />
+      <NewsContainer />
     </>
   );
 }
