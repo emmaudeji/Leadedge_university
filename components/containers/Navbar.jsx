@@ -18,7 +18,7 @@ const navBar = () => {
       <div className="logo">
         <Link href={'/'}>
             <img src="/leadedge-white-logo.png" alt="leadedge-logo" 
-            className='w-56'/>
+            className='sm:w-56 w-40 '/>
         </Link>
       </div>
       
