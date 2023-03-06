@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { philosophy } from '@/data/philosophy'
 import { AiFillCheckSquare } from 'react-icons/ai'
 
+
 const LeadedgePhilosopy = () => {
   return (
     <div className='section-container py-24 bg-zinc-200 gap-14 w-full'>
@@ -20,12 +21,12 @@ const LeadedgePhilosopy = () => {
 
       <div className='flex-1 flex flex-col pt-10'>
         <div className='text-2xl font-bold hidden md:flex'>Leadedge Philosophy</div>
-        { philosophy?.map((item, i) => {
+        { philosophy?.map(({id, title, icon}) => {
           return (
-            <div key={i} className="philosophy-container cursor-pointer hover:bg-zinc-300 duration-500 flex py-4 text-2xl">
-          <div className="icon text-4xl text-blue-900"><AiFillCheckSquare/></div>
+            <div key={id} className="philosophy-container cursor-pointer hover:bg-zinc-300 duration-500 flex py-4 text-2xl">
+          <div className="icon text-4xl text-blue-900">{icon}</div>
           <div className="ml-6 content">
-            <Link href={'./about'}>{item}</Link>
+            <Link href={'./about'}>{title}</Link>
           </div>
         </div>
           )

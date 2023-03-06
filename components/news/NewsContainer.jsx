@@ -43,7 +43,7 @@ const NewsContainer = () => {
             </div>
           </div>
         </div>
-        <div className='md:col-span-1 py-10 bg-blue-900 text-white px-6 w-full'>
+        <div className='md:col-span-1 bg-blue-900 text-white w-full '>
           <Events/>
         </div>
       

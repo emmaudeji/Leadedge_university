@@ -1,37 +1,12 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 import {courses} from '../../data/courses';
 import {IoMdArrowDropdown, IoMdArrowDropup} from 'react-icons/io'
+import {AiOutlineSearch} from 'react-icons/ai'
 
 
 const searchCourses = () => {
-  const data = [
-    {
-      id: 0,
-      name: 'Civil Engineering',
-      school: 'School of Engineering',
-      interst: 'contruction'
-    },
-    {
-      id: 1,
-      name: 'Electrical Engineering',
-      school: 'School of Engineering',
-      interst: 'Power'
-    },
-    {
-      id: 2,
-      name: 'Business Admin',
-      school: 'School of Business',
-      interst: 'marketing'
-    },
-    {
-      id: 3,
-      name: 'Microbiology',
-      school: 'School of Sciences',
-      interst: 'biology'
-    },
-  ]
-  const ref = useRef(null)
+  
   // control states of UI
   const [dropdownMenue, setDropdownMenue] = useState(false)
 
@@ -161,18 +136,18 @@ const searchCourses = () => {
         <div className='pt-6'>
           <form onSubmit={filterCourses}>
             {alert ? <div className='pb-2 text-white'>{alert}</div> : null}
-            <div  className="searchBox">
+            <div  className="flex">
               <input 
-              ref={ref}
+              
               type="text" 
               name="searchInput"
               placeholder='Enter the course'
-              className='w-[80%] p-4 bg-white text-xl text-zinc-900'
+              className='w-[80%] p-4 bg-white text-xl text-zinc-900 hover:bg-blue-200 focus:bg-white duration-500'
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               />
-              <button type="submit" className='w-[20%] p-4 text-lg bg-blue-800
-              '> Search</button>
+              <button type="submit" className='py-1 text-4xl font-bold bg-blue-800 flex justify-center items-center w-[20%]
+              hover:bg-blue-700 duration-500'> <AiOutlineSearch/></button>
             </div>
 
             <div className="searchOptions pt-2 pb-4 flex flex-col sm:flex-row md:w-[80%]  gap-2 ">

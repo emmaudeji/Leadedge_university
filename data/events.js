@@ -1,0 +1,42 @@
+export const events = [
+  {
+    id: 0,
+    heading: "Opening Day",
+    details: "",
+    date: "09/09/2023",
+    time: "3.00 WAT",
+    category: "",
+  },
+  {
+    id: 1,
+    heading: "Students Week",
+    details: "",
+    date: "22/10/2023",
+    time: "3.00 WAT",
+    category: "",
+  },
+  {
+    id: 2,
+    heading: "Examination starts",
+    details: "",
+    date: "22/11/2023",
+    time: "3.00 WAT",
+    category: "",
+  },
+  {
+    id: 3,
+    heading: "IGOLD Conference",
+    details: "",
+    date: "12/11/2023",
+    time: "3.00 WAT",
+    category: "",
+  },
+  {
+    id: 4,
+    heading: "Athletics",
+    details: "",
+    date: "09/12/2023",
+    time: "3.00 WAT",
+    category: "",
+  },
+];

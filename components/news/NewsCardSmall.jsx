@@ -12,7 +12,7 @@ const NewsCardSmall = ({image, heading, date, category, link}) => {
         <div className="text-zinc-300 " >
           {date} / {category}
         </div>
-        <div>
+        <div className='hover:text-blue-900 duration-500'>
           {heading}
         </div>
       </div>
