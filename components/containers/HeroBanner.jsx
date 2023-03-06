@@ -1,20 +1,26 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 const HeroBanner = () => {
   return (
     <div className='section-container bg-blue-900 h-full md:h-[100vh]  justify-between md:gap-20 gap:10 pt-10 md:pt-0'>
       <div className='flex items-center flex-1 w-full h-full'>
         {/* header caption */}
-        <div className='mb-8 md:mb-0'>
-          <div className='text-white'>
+        <div className='mb-8 md:mb-0 pt-10 md:pt-0'>
+          <div className='text-white '>
             <h1 className=' text-4xl  md:text-5xl font-bold pb-2'>Join the New Generation of Creative Leaders</h1>
-            <p>Applications are open for September 2023 intakes </p>
+            <p>Application is open for September 2023 intakes </p>
           </div>
           
           <div className='flex gap-8 pt-4'>
+            <Link href='./admissions'>
             <button className='py-4 px-6 w-32 bg-white hover:bg-yellow-500 duration-300 text-center'>Apply </button>
+            </Link>
+            <Link href='/about'>
             <button className='py-4 w-32 bg-white hover:bg-yellow-500 duration-300'>Learn More</button>
+            </Link>
+            
           </div>
         </div>
       </div>
