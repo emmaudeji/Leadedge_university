@@ -5,9 +5,10 @@ import Devmode from '@/components/devmode'
 const links= () => {
   
   return (
-    <div className='section-container py-24
+    <div className='
     '>
-      <div className='flex justify-center items-center text-6xl text-zinc-400 border-b border-zinc-400 pb-24'>Links</div>
+      <div className='section-container  py-24 justify-center  items-center text-6xl text-zinc-400 border-b border-zinc-400'>Links
+      </div>
       <Devmode/>
     </div>
   )

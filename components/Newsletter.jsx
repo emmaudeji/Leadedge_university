@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { IoMdPaperPlane } from 'react-icons/io';
 import {AiOutlineTeam} from 'react-icons/ai'
+import Link from 'next/link'
 
 const Newsletter = () => {
   const [input, setInput] = useState('')
@@ -37,8 +38,8 @@ const Newsletter = () => {
         </form>
         </div>
 
-        <div 
-        className='bg-blue-700 flex items-center gap-4 pr-6  sm:pr-16  lg:pr-36 xl:pr-48 pl-6 text-white py-10 flex-1'
+        <Link href='./donate' 
+        className='bg-blue-700 flex items-center gap-4 pr-6  sm:pr-16  lg:pr-36 xl:pr-48 pl-6 text-white py-10 flex-1 hover:scale-105 cursor-pointer duration-500'
         >
           <AiOutlineTeam
           className='text-[12rem] font-bold'/>
@@ -47,7 +48,7 @@ const Newsletter = () => {
           <p>The Campaign for the Leadedge  University is a large fundraising campaign. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deserunt?</p>
           </div>
           
-        </div>
+        </Link>
     </div>
   )
 }
