@@ -6,6 +6,7 @@ import WhyLU from "@/components/containers/WhyLU";
 import LeadedgePhilosopy from "../components/containers/LeadedgePhilosopy";
 import SearchCourses from "../components/containers/searchCourses";
 import Classroom from "@/components/containers/Classroom";
+import Services from "@/components/containers/Services";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SearchCourses />
       <LeadedgePhilosopy />
       <Classroom />
+      <Services />
     </>
   );
 }
