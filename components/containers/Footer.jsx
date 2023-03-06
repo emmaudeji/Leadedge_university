@@ -8,6 +8,7 @@ import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, A
 
 const Footer = () => {
   const [show, setShow] = useState(false)
+  const [active, setActive] = useState('')
   return (
     <>
 
@@ -56,23 +57,32 @@ const Footer = () => {
             <p className=''>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, quas!</p>
            </div>
 
-           <div> 
-              <button onClick={() => setShow(!show)}
-              className='cursor-pointer hover:text-yellow-500 duration-300'>
-              {!show ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>General Enquiries</span>
-              {show ? (<p>info@leadedge.edu</p>) : null}
+          <div onClick={() => (setActive('1') )}
+           className='cursor-pointer'>
+            <button >
+              {!(active === '1')  ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>Admissions</span>
+              <p
+              className={(active === '1') ? 'flex' : 'hidden'}
+              >registrar@leadedge.edu</p>
            </div>
 
-           <div> 
-              <button onClick={() => setShow(!show)}>
-              {!show ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>Admissions</span>
-              {show ? (<p>registrar@leadedge.edu</p>) : null}
-           </div>
            
-           <div> 
-              <button onClick={() => setShow(!show)}>
-              {!show ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>Media and Support</span>
-              {show ? (<p>media@leadedge.edu</p>) : null}
+           <div onClick={() => (setActive('2') )}
+           className='cursor-pointer'>
+            <button >
+              {!(active === '2')  ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>Admissions</span>
+              <p
+              className={(active === '2') ? 'flex' : 'hidden'}
+              >registrar@leadedge.edu</p>
+           </div>
+         
+           <div onClick={() => (setActive('3') )}
+           className='cursor-pointer'>
+            <button >
+              {!(active === '3')  ? <IoMdArrowDropdown/> : <IoMdArrowDropup/> }</button> <span>Media and Support</span>
+              <p
+              className={(active === '3') ? 'flex' : 'hidden'}
+              >registrar@leadedge.edu</p>
            </div>
           </div>
         </div>
@@ -83,7 +93,13 @@ const Footer = () => {
 
     <div className='section-container justify-between py-4 bg-blue-900 text-white  '>
       <div className='pb-2'>Copywright Leadedge University 2023</div>
-      <div className='flex gap-4 text-xl  md:text-3xl cursor-pointer hover:text-yellow-500 duration-300 '><AiFillFacebook/><AiFillTwitterSquare/><AiFillInstagram/> <AiFillLinkedin/></div>
+      <div className='flex gap-4 text-xl  md:text-3xl cursor-pointer '><AiFillFacebook className='hover:text-yellow-500 duration-300 '/>
+      <AiFillTwitterSquare
+      className='hover:text-yellow-500 duration-300 '/>
+      <AiFillInstagram
+      className='hover:text-yellow-500 duration-300 '/>
+       <AiFillLinkedin
+       className='hover:text-yellow-500 duration-300 '/></div>
     </div>
     </>
     
