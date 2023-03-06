@@ -5,6 +5,7 @@ import HeroBanner from "@/components/containers/HeroBanner";
 import WhyLU from "@/components/containers/WhyLU";
 import LeadedgePhilosopy from "../components/containers/LeadedgePhilosopy";
 import SearchCourses from "../components/containers/searchCourses";
+import Classroom from "@/components/containers/Classroom";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <WhyLU />
       <SearchCourses />
       <LeadedgePhilosopy />
+      <Classroom />
     </>
   );
 }

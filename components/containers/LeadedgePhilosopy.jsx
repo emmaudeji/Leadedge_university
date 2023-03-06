@@ -19,7 +19,7 @@ const LeadedgePhilosopy = () => {
       </div>
 
       <div className='flex-1 flex flex-col pt-10'>
-        <div className='text-2xl font-bold hidden md:flex'>Leadedge Philosphy</div>
+        <div className='text-2xl font-bold hidden md:flex'>Leadedge Philosophy</div>
         { philosophy?.map((item, i) => {
           return (
             <div key={i} className="philosophy-container cursor-pointer hover:bg-zinc-300 duration-500 flex py-4 text-2xl">
