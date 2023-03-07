@@ -138,11 +138,10 @@ const searchCourses = () => {
             {alert ? <div className='pb-2 text-white'>{alert}</div> : null}
             <div  className="flex">
               <input 
-              
               type="text" 
               name="searchInput"
               placeholder='Enter the course'
-              className='w-[80%] p-4 bg-white text-xl text-zinc-900 hover:bg-blue-200 focus:bg-white duration-500'
+              className='w-[80%] p-4 bg-white text-xl text-zinc-900 hover:bg-blue-100 focus:bg-white duration-500'
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               />
