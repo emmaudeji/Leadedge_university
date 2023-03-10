@@ -3,7 +3,8 @@ import Link from 'next/link'
 import { navlinks } from '@/data/navlinks'
 import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai'
 import Searchbox from '../searchbox';
-import UseOnClickOutside from '@/hooks/useOnClickOutside';
+import UseOnClickOutside from '../../hooks/useOnClickOutside'
+import MobileNav from '../MobileNav';
 
 
 const navBar = () => {
@@ -13,7 +14,7 @@ const navBar = () => {
 
   return (
     <>
-    <div className='w-full flex px-6 sm:px-16 lg:px-36 bg-blue-800 py-6 justify-between text-white capitalize text-lg items-center z-50'>
+    <div className=' w-full h-24 flex px-6 sm:px-16 lg:px-36 bg-blue-800 items-center  justify-between text-white capitalize text-lg  z-50 '>
       
       <div className="logo">
         <Link href={'/'}>
@@ -22,7 +23,7 @@ const navBar = () => {
         </Link>
       </div>
       
-      { !click ? 
+      { !click && 
       /* destop-nav */
         (<div className='hidden md:flex gap-12'>
           {
@@ -40,42 +41,24 @@ const navBar = () => {
             })
           }
         </div> )
-        : 
-      /* mobile-nav */
-        <UseOnClickOutside
-          show={click}
-          onClickOutside={() => setClick(false)}
-          component={
-            (<div className='mobile-nav'
-              onClick={() => setClick(false)}>
-                {
-                  navlinks.map(({id, title, link}) => {
-                    return (
-                        <div key={id}>
-                          <Link href={link}>
-                            <div className={`hover:font-bold duration-300 ${(active === title) ? 'font-bold' : ''} cursor-pointer border-b border-white`}
-                            onClick={() => setActive(title)}>
-                              {title}
-                            </div>
-                          </Link>
-                      </div>
-                    )
-                  })
-                }
-            </div>)
-          }
+       }
+      {/* mobile-nav  */}
+       <MobileNav
+          setClick={setClick}
+          active={active}
+          setActive ={setActive}
+          click={click}
         />
-      }
+         
+      
 
-      <div className='flex md:hidden cursor-pointer hover:font-bold duration-300 gap-4 text-2xl'>
+      <div className='flex bg-blue-800 md:hidden cursor-pointer hover:font-bold duration-300 gap-4 text-2xl z-50'>
         <div  onClick={() => setShowSearchBox(!showSearchBox)}>
           {showSearchBox ? <AiOutlineClose/> : <AiOutlineSearch/>}
-         
         </div>
           <div className='flex md:hidden cursor-pointer hover:font-bold duration-300'
           onClick={() => setClick(!click)}>
             {!click ? <AiOutlineMenu/> : <AiOutlineClose/>}
-  
           </div>
       </div>
       
@@ -89,9 +72,7 @@ const navBar = () => {
           component={<Searchbox/>}
         />  
     </div>
-    
     </>
-    
   )
 }
 

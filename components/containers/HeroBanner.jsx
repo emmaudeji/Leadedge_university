@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 const HeroBanner = () => {
   return (
-    <div className='section-container bg-blue-900 h-full md:h-[100vh]  justify-between md:gap-20 gap:10 pt-10 md:pt-0'>
+    <div className='section-container  bg-blue-900 h-full md:h-[100vh] pt-48 md:pt-24 justify-between md:gap-20 gap:10'>
       <div className='flex items-center flex-1 w-full h-full'>
         {/* header caption */}
-        <div className='mb-8 md:mb-0 pt-10 md:pt-0'>
+        <div className='mb-8 md:mb-0 '>
           <div className='text-white '>
             <h1 className=' text-4xl  md:text-5xl font-bold pb-2'>Join the New Generation of Creative Leaders</h1>
             <p>Application is open for September 2023 intakes </p>

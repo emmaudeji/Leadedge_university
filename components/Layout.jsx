@@ -12,8 +12,11 @@ const layout = ({children}) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div >
-        <Header/>
-        <Navbar/>
+        <div className='fixed z-50 w-full'>
+          <Header/>
+          <Navbar />
+        </div>
+        
           {children}
         <Footer/>
       </div>

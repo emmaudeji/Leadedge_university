@@ -8,7 +8,7 @@ const header = () => {
 
   return (
     <>
-    <div className='hidden w-full md:flex px-6 sm:px-16 lg:px-36 bg-blue-400 py-2 justify-between text-white capitalize'>
+    <div className='hidden  w-full h-10 md:flex items-center sm:px-16 lg:px-36 bg-blue-400 py-2 justify-between text-white capitalize z-50'>
       <div>
         <div>
           <p>+234-8035000001</p>
