@@ -5,16 +5,16 @@ const Services = () => {
   return (
     <div className='w-full grid px-6 sm:px-16 lg:px-36 grid-cols-2 md:grid-cols-4 py-16 gap-1 text-xl sm:text-2xl capitalize '>
       <Link href='./studies'>
-        <div className='bg-yellow-500 hover:bg-yellow-400 p-8  duration-300 cursor-pointer h-full'>Start your Bachelors's Degree</div>
+        <div className='bg-yellow-500 hover:bg-yellow-400 px-4 py-8 md:px-8   duration-300 cursor-pointer h-full'>Start your Bachelors's Degree</div>
       </Link>
       <Link href='./consultation'>
-        <div className='bg-yellow-500 hover:bg-yellow-400 p-8  duration-300 cursor-pointer h-full'>Get Educational Services</div>
+        <div className='bg-yellow-500 hover:bg-yellow-400 p-8 px-4 md:px-8  duration-300 cursor-pointer h-full'>Get Educational Services</div>
       </Link>
       <Link href='./professional-courses'>
-        <div className='bg-yellow-500 hover:bg-yellow-400 p-8  duration-300 cursor-pointer h-full'>Learn a Professional course</div>
+        <div className='bg-yellow-500 hover:bg-yellow-400 p-8 px-4 md:px-8  duration-300 cursor-pointer h-full'>Learn a Professional course</div>
       </Link>
       <Link href='./studies'>
-        <div className='bg-yellow-500 hover:bg-yellow-400 p-8  duration-300 cursor-pointer h-full'>Learn  about Leadedge University</div>
+        <div className='bg-yellow-500 hover:bg-yellow-400 p-8 px-4 md:px-8 duration-300 cursor-pointer h-full'>Learn  about Leadedge University</div>
       </Link>
       
     </div>

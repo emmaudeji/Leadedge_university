@@ -15,7 +15,7 @@ const WhyLU = () => {
         <p className='text-lg pt-6 pb-6 '>Students at Leadedge want a university that will prepare them to be the leaders who will transform Africa. They want hands-on real world experience led by some of the world’s most innovative educators. 
          They want their time at a university to lead them to a job or even to launch a company. They want to be part of a global network committed to their success.
       </p>
-      <Link href='./blog' className='text-blue-900 hover:text-blue-700 duration-500 font-bold text-xl cursor-pointer'>Learn more
+      <Link href='./blog' className='text-blue-900 hover:text-blue-700 duration-500 text-lg cursor-pointer'>Learn more
       </Link>
       </div>
     </div>
